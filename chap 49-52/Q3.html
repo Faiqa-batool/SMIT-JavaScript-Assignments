@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style3.css">
+    <title>JS Assignment | chap 49-52| Q3</title>
+</head>
+<body>
+    <script src="./assets/app3.js"></script>
+    <form onsubmit="addStudent(); return false;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <label for="age">Age:</label>
+        <input type="number" id="age" required>
+        <button type="submit">Add Student</button>
+      </form>
+    
+      <table id="studentTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="studentList">
+          <!-- Student details will be dynamically added here -->
+        </tbody>
+      </table>
+    
+      <div class="hidden-form" id="editForm">
+        <h2>Edit Student</h2>
+        <label for="editName">Name:</label>
+        <input type="text" id="editName" required>
+        <label for="editAge">Age:</label>
+        <input type="number" id="editAge" required>
+        <button onclick="updateStudent()">Save Changes</button>
+        <button onclick="cancelEdit()">Cancel</button>
+      </div>
+</body>
+</html>
